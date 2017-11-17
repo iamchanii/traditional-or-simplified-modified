@@ -1,7 +1,7 @@
 {
-  "name": "traditional-or-simplified",
+  "name": "traditional-or-simplified-modified",
   "version": "1.0.0",
-  "description": "Detect if a string contains traditional or simplified Chinese characters.",
+  "description": "Modified version of Nick Drewe's tc or sc checker.",
   "main": "TradOrSimp.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
