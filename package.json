@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/nickdrewe/traditional-or-simplified.git"
+    "url": "git+https://github.com/pupipipu/traditional-or-simplified-modified.git"
   },
   "keywords": [
     "chinese",
@@ -25,7 +25,7 @@
   "author": "Nick Drewe",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/nickdrewe/traditional-or-simplified/issues"
+    "url": "https://github.com/pupipipu/traditional-or-simplified-modified/issues"
   },
-  "homepage": "https://github.com/nickdrewe/traditional-or-simplified#readme"
+  "homepage": "https://github.com/pupipipu/traditional-or-simplified-modified#readme"
 }
