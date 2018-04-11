@@ -65,8 +65,44 @@ function escapeRegExp(str) {
   return str.replace(/[\-\[\]\/\{\}\(\)\*\+\?\.\\\^\$\|]/g, "\\$&");
 }
 
+function extract(str, target) {
+  var result = {
+    simplified: [],
+    traditional: [],
+  };
+
+  for (var i = 0; i < str.length; i++) {
+    var char = str.substr(i, 1)
+
+    if ((target === 'all' || target === 'simplified') && charIsS(char)) {
+      result.simplified.push(char);
+    }
+
+    if ((target === 'all' || target === 'traditional') && charIsT(char)) {
+      result.traditional.push(char);
+    }
+  }
+
+  return result;
+}
+
+function extractAll(str) {
+  return extract(str, 'all');
+}
+
+function extractSimplified(str) {
+  return extract(str, 'simplified').simplified;
+}
+
+function extractTraditional(str) {
+  return extract(str, 'traditional').traditional;
+}
+
 module.exports = {
   isTraditional,
   isSimplified,
-  detect
+  detect,
+  extractAll,
+  extractTraditional,
+  extractSimplified,
 }

@@ -28,3 +28,20 @@ console.log('==================================================\n\n');
 console.log('Detect: ' + detect);
 console.log(tradOrSimp.detect(detect));
 console.log('==================================================');
+
+// extractAll
+console.log('extractAll:', detect);
+const { traditional, simplified } = tradOrSimp.extractAll(detect);
+console.log('traditional:', traditional.join(','));
+console.log('simplified:', simplified.join(','));
+console.log('==================================================');
+
+// extractTraditional
+console.log('extractTraditional:', detect);
+console.log(tradOrSimp.extractTraditional(detect).join(','));
+console.log('==================================================');
+
+// extractSimplified
+console.log('extractSimplified:', detect);
+console.log(tradOrSimp.extractSimplified(detect).join(','));
+console.log('==================================================');

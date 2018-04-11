@@ -1,8 +1,8 @@
-# modified version of Nick Drewe's tc and sc checker.
+# modified version of iamchanii
 
 ### Some added changes
-* Added more simplified and traditional chinese detectedCharacters
-* Escaped special character to prevent regex error
+* Add extract function.
 
 ### Original library
+https://github.com/pupipipu/traditional-or-simplified-modified
 https://github.com/nickdrewe/traditional-or-simplified
